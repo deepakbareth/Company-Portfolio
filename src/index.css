@@ -171,3 +171,17 @@
 .animate-marquee {
   animation: marquee 20s linear infinite;
 }
+
+/* Premium Vibrate Animation */
+@keyframes premium-vibrate {
+  0% { transform: translate(0, 0) scale(1); text-shadow: 0 0 15px rgba(255,255,255,0.1); }
+  25% { transform: translate(1px, -1px) scale(1.005); text-shadow: 0 0 30px rgba(231,226,71,0.4); }
+  50% { transform: translate(-1px, 1px) scale(1); text-shadow: 0 0 15px rgba(255,255,255,0.1); }
+  75% { transform: translate(-1px, -1px) scale(1.005); text-shadow: 0 0 30px rgba(231,226,71,0.4); }
+  100% { transform: translate(0, 0) scale(1); text-shadow: 0 0 15px rgba(255,255,255,0.1); }
+}
+
+.animate-premium-vibrate {
+  animation: premium-vibrate 4s ease-in-out infinite;
+  display: inline-block;
+}

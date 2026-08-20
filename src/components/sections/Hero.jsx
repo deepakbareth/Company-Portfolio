@@ -47,7 +47,7 @@ export default function Hero() {
 
         {/* Main Text Updated from Image */}
         <h1 className="text-4xl sm:text-6xl md:text-8xl font-black tracking-tighter leading-[1] flex flex-col items-center break-words w-full">
-          <span className="drop-shadow-lg">PREMIUM</span>
+          <span className="drop-shadow-lg animate-premium-vibrate text-[#fcfbcf]">PREMIUM</span>
           <span className="drop-shadow-lg mt-2 text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400">BUSINESS WEBSITES</span>
         </h1>
 

@@ -61,9 +61,11 @@ export default function Hero() {
           {/* Repeating Groups */}
           {[...Array(4)].map((_, i) => (
             <React.Fragment key={i}>
-              <span className="mx-4">PREMIUM</span><span className="mx-4 opacity-50">◈</span>
-              <span className="mx-4">BUSINESS</span><span className="mx-4 opacity-50">◈</span>
-              <span className="mx-4">WEBSITES</span><span className="mx-4 opacity-50">◈</span>
+              <span className="mx-4">WEB DESIGN</span><span className="mx-4 opacity-50">◈</span>
+              <span className="mx-4">DEVELOPMENT</span><span className="mx-4 opacity-50">◈</span>
+              <span className="mx-4">E-COMMERCE</span><span className="mx-4 opacity-50">◈</span>
+              <span className="mx-4">SEO</span><span className="mx-4 opacity-50">◈</span>
+              <span className="mx-4">BRANDING</span><span className="mx-4 opacity-50">◈</span>
             </React.Fragment>
           ))}
         </div>

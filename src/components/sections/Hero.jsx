@@ -3,8 +3,8 @@ import { PenTool, Code, Megaphone, Cpu, Smartphone, ShoppingCart, Search, Star }
 import img1 from '../../assets/banner/b1.jpg'
 import img2 from '../../assets/banner/b2.jpg'
 import img3 from '../../assets/banner/b3.jpg'
-import img4 from '../../assets/banner/b4.jpg'
-import img5 from '../../assets/banner/b5.jpg'
+import img4 from '../../assets/banner/b5.jpg'
+import img5 from '../../assets/banner/b4.jpg'
 import img6 from '../../assets/banner/b6.jpg'
 
 
@@ -49,7 +49,7 @@ export default function Hero() {
         {/* Main Text Updated from Image */}
         <h1 className="text-4xl sm:text-6xl md:text-8xl font-black tracking-tighter leading-[1] flex flex-col items-center break-words w-full">
           <span className="drop-shadow-lg animate-premium-vibrate text-[#fcfbcf]">PREMIUM</span>
-          <span className="drop-shadow-lg mt-2 text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400">BUSINESS WEBSITES</span>
+          <span className="drop-shadow-lg px-1 mt-2 text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400">BUSINESS WEBSITES</span>
         </h1>
 
         {/* Subheading Text Updated from Image */}
@@ -72,25 +72,25 @@ export default function Hero() {
             <React.Fragment key={i}>
               <PenTool className="mx-4 opacity-50 text-[#0A192F]" size={28} />
               <span className="mx-4">WEB DESIGN</span>
-              
+
               <Code className="mx-4 opacity-50 text-[#0A192F]" size={28} />
               <span className="mx-4">WEB DEVELOPMENT</span>
-              
+
               <Megaphone className="mx-4 opacity-50 text-[#0A192F]" size={28} />
               <span className="mx-4">DIGITAL MARKETING</span>
-              
+
               <Cpu className="mx-4 opacity-50 text-[#0A192F]" size={28} />
               <span className="mx-4">CUSTOM SOFTWARE</span>
-              
+
               <Smartphone className="mx-4 opacity-50 text-[#0A192F]" size={28} />
               <span className="mx-4">MOBILE APPS</span>
-              
+
               <ShoppingCart className="mx-4 opacity-50 text-[#0A192F]" size={28} />
               <span className="mx-4">E-COMMERCE</span>
-              
+
               <Search className="mx-4 opacity-50 text-[#0A192F]" size={28} />
               <span className="mx-4">SEO & PPC</span>
-              
+
               <Star className="mx-4 opacity-50 text-[#0A192F]" size={28} />
               <span className="mx-4">BRANDING</span>
             </React.Fragment>

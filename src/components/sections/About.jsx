@@ -56,10 +56,10 @@ export default function About() {
           
           <div className="space-y-6 text-slate-400 text-lg font-medium leading-relaxed max-w-xl">
             <p>
-              We are a collective of digital craftsmen, strategists, and innovators. At Premium Business Websites, we don't just build websites; we engineer digital experiences that elevate brands and drive measurable growth.
+              With over 10 years of experience, Premium Business Websites is dedicated to integrating cutting-edge technology and tailored marketing strategies. We specialize in custom web design, .NET & PHP development, and high-performance CMS solutions.
             </p>
             <p>
-              By bridging the gap between stunning aesthetics and robust technology, we empower modern enterprises to stand out in an increasingly crowded digital landscape. Your vision, our expertise.
+              Our mission is to help businesses grow by providing professional, high-quality digital services at reasonable rates. From robust e-commerce platforms to data-driven SEO and PPC campaigns, we deliver solutions that drive measurable success globally.
             </p>
           </div>
 

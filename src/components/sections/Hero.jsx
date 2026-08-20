@@ -1,4 +1,12 @@
 import React from 'react';
+import img1 from '../../assets/banner/b1.jpg'
+import img2 from '../../assets/banner/b2.jpg'
+import img3 from '../../assets/banner/b3.jpg'
+import img4 from '../../assets/banner/b4.jpg'
+import img5 from '../../assets/banner/b5.jpg'
+import img6 from '../../assets/banner/b6.jpg'
+
+
 
 export default function Hero() {
   return (
@@ -6,32 +14,32 @@ export default function Hero() {
 
       {/* Floating Image 1 (Top Left) */}
       <div className="absolute top-[20%] left-[10%] w-48 h-32 rounded-lg overflow-hidden shadow-2xl animate-float opacity-90 hover:opacity-100 transition-opacity hidden md:block" style={{ animationDelay: '0s' }}>
-        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80" alt="Web Dev" className="w-full h-full object-cover" />
+        <img src={img1} alt="Web Dev" className="w-full h-full object-cover" />
       </div>
 
       {/* Floating Image 2 (Top Right) */}
       <div className="absolute top-[15%] right-[15%] w-32 h-32 rounded-lg overflow-hidden shadow-2xl animate-float opacity-90 hover:opacity-100 transition-opacity hidden md:block" style={{ animationDelay: '1s' }}>
-        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=400&q=80" alt="Code" className="w-full h-full object-cover" />
+        <img src={img2} alt="Code" className="w-full h-full object-cover" />
       </div>
 
       {/* Floating Image 3 (Mid Left) */}
       <div className="absolute top-[50%] left-[5%] w-36 h-36 rounded-lg overflow-hidden shadow-2xl animate-float opacity-90 hover:opacity-100 transition-opacity hidden lg:block" style={{ animationDelay: '2s' }}>
-        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="Setup" className="w-full h-full object-cover" />
+        <img src={img3} alt="Setup" className="w-full h-full object-cover" />
       </div>
 
       {/* Floating Image 4 (Bottom Left) */}
       <div className="absolute bottom-[20%] left-[15%] w-56 h-40 rounded-lg overflow-hidden shadow-2xl animate-float opacity-90 hover:opacity-100 transition-opacity hidden md:block" style={{ animationDelay: '0.5s' }}>
-        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80" alt="Analytics" className="w-full h-full object-cover" />
+        <img src={img4} alt="Analytics" className="w-full h-full object-cover" />
       </div>
 
       {/* Floating Image 5 (Bottom Right) */}
       <div className="absolute bottom-[25%] right-[10%] w-64 h-48 rounded-lg overflow-hidden shadow-2xl animate-float opacity-90 hover:opacity-100 transition-opacity hidden md:block" style={{ animationDelay: '1.5s' }}>
-        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=400&q=80" alt="Design" className="w-full h-full object-cover" />
+        <img src={img5} alt="Design" className="w-full h-full object-cover" />
       </div>
 
       {/* Floating Image 6 (Mid Right) */}
       <div className="absolute top-[40%] right-[5%] w-40 h-40 rounded-lg overflow-hidden shadow-2xl animate-float opacity-90 hover:opacity-100 transition-opacity hidden lg:block" style={{ animationDelay: '2.5s' }}>
-        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80" alt="Dashboard" className="w-full h-full object-cover" />
+        <img src={img6} alt="Dashboard" className="w-full h-full object-cover" />
       </div>
 
       {/* Central Content */}

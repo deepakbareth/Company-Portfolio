@@ -1,24 +1,36 @@
 import React from 'react';
+import img1 from '../../assets/portfolio/p1.jpg';
+import img2 from '../../assets/portfolio/p2.jpg';
+import img3 from '../../assets/portfolio/p3.jpg';
+import img4 from '../../assets/portfolio/p4.jpg';
+import img5 from '../../assets/portfolio/p5.jpg';
+import img6 from '../../assets/portfolio/p6.jpg';
+import img7 from '../../assets/portfolio/p7.jpg';
+import img8 from '../../assets/portfolio/p8.jpg';
+import img9 from '../../assets/portfolio/p9.jpg';
+
 
 // Extracted from https://premiumbusinesswebsites.com/our-work/
 const projects = [
-  { name: 'The Westhampton Beach Project', url: 'https://www.whbprojectbycolucci.com/', image: 'https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=600&q=80' },
-  { name: 'Insurance Solutions With Fred', url: 'https://insurancesolutionswithfred.com/', image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80' },
-  { name: 'Campfire Dreams', url: 'https://www.campfiredreams.com/', image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80' },
-  { name: 'Vacation Canyon Lake', url: 'https://canyonlakevacation.com/', image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80' },
-  { name: 'Coastal Carolina Plumbing', url: 'https://coastalcarolinaplumbingservices.com/', image: 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=600&q=80' },
-  { name: 'Quinta Anabtawi', url: 'https://www.quintamendoza.com/', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80' },
-  { name: 'Steven Colucci Arts', url: 'https://www.stevencolucciarts.com/', image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80' },
-  { name: 'Tehillim Olumi', url: 'https://tehillimolumi.us/', image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80' },
-  { name: 'The Palms of Mobay', url: 'https://www.thepalmsofmobay.com/', image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80' },
+  { name: 'The Westhampton Beach Project', url: 'https://www.whbprojectbycolucci.com/', image: img1 },
+  { name: 'Insurance Solutions With Fred', url: 'https://insurancesolutionswithfred.com/', image: img2 },
+  { name: 'Campfire Dreams', url: 'https://www.campfiredreams.com/', image: img3 },
+  { name: 'Vacation Canyon Lake', url: 'https://canyonlakevacation.com/', image: img4 },
+  { name: 'Coastal Carolina Plumbing', url: 'https://coastalcarolinaplumbingservices.com/', image: img5 },
+  { name: 'Quinta Anabtawi', url: 'https://www.quintamendoza.com/', image: img6 },
+  { name: 'Steven Colucci Arts', url: 'https://www.stevencolucciarts.com/', image: img7 },
+  { name: 'Tehillim Olumi', url: 'https://tehillimolumi.us/', image: img8 },
+  { name: 'The Palms of Mobay', url: 'https://www.thepalmsofmobay.com/', image: img9 },
 ];
 
 export default function Portfolio() {
   return (
-    <section id="work" className="py-24 px-6 md:px-12 lg:px-24 bg-[#071324] relative">
-      
+    <section id="work" className="py-24 px-6 md:px-12 lg:px-24 bg-[#071324] relative overflow-hidden">
+      {/* Background Decor */}
+      <div className="absolute inset-0 bg-grid-pattern opacity-50 pointer-events-none"></div>
+
       <div className="max-w-7xl mx-auto relative z-10">
-        
+
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
@@ -39,22 +51,22 @@ export default function Portfolio() {
         {/* Portfolio Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <a 
-              key={index} 
-              href={project.url} 
-              target="_blank" 
+            <a
+              key={index}
+              href={project.url}
+              target="_blank"
               rel="noopener noreferrer"
               className="group block relative rounded-2xl overflow-hidden bg-slate-900 shadow-2xl"
             >
               {/* Image Container */}
               <div className="relative h-72 w-full overflow-hidden">
                 <div className="absolute inset-0 bg-[#0A192F]/60 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
-                <img 
-                  src={project.image} 
-                  alt={project.name} 
+                <img
+                  src={project.image}
+                  alt={project.name}
                   className="w-full h-full object-cover transform scale-105 group-hover:scale-110 transition-transform duration-700"
                 />
-                
+
                 {/* View Project Pill (Appears on Hover) */}
                 <div className="absolute inset-0 z-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="bg-white text-[#0A192F] text-xs font-bold tracking-widest uppercase px-6 py-3 rounded-full shadow-2xl transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">

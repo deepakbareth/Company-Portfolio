@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <>
       {/* Floating Navbar Pill */}
-      <div className="fixed top-6 left-0 right-0 z-[60] px-4 sm:px-8 flex justify-center w-full pointer-events-none">
+      <div className="fixed top-3 left-0 right-0 z-[60] px-4 sm:px-8 flex justify-center w-full pointer-events-none">
         <nav className="pointer-events-auto w-full max-w-6xl bg-white rounded-full flex items-center justify-between px-6 py-3 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
 
           {/* Logo */}

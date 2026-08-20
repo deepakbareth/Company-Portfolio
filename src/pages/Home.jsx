@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../components/layout/Navbar';
 import Hero from '../components/sections/Hero';
+import About from '../components/sections/About';
 
 export default function Home() {
   const [contactOpen, setContactOpen] = useState(false);
@@ -24,6 +25,7 @@ export default function Home() {
       {/* Main Content Areas */}
       <main>
         <Hero />
+        <About />
       </main>
 
     </div>
